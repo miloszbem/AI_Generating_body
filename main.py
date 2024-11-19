@@ -22,14 +22,11 @@ with open(output_file_path, "w", encoding="utf-8") as output_file:
             "role": "user",  # Rola użytkownika w interakcji
             "content": (
                 f"{file_content} \n"  # Dodanie treści z pliku
-                "Przerób dany tekst na kod HTML z odpowiednimi tagami HTML do strukturyzacji treści,"
-                "określ miejsca gdzie warto wstawić grafikę, użyj w tych miejscach tagu HTML z atrybutem "
-                "\"src='image-placeholder.jpg'\", do atrybutu alt wpisz dokładny prompt opisujący obrazek, "
-                "który byłby w odpowiedniej formie aby później można było go użyć do"
-                "wygenerowania grafiki w programie AI. Umieść podpisy pod grafikami używając "
-                "tagu <figcaption>.Twoja wiadomość powinna nadawać się do wklejenia pomiędzy tagami <body> i </body>"
-                "do zapisania w pliku z rozszerzeniem .html"
-                "nie używaj formatowania .css. Nie dodawaj \"```HTML\", \"```\", <body> oraz </body> do twojej odpowiedzi"
+                "Przekształć tekst na kod HTML z odpowiednimi tagami. Wstaw miejsca na grafikę, używając tagu "
+                "<img src='image-placeholder.jpg'> w sekcji alt wpisz dokładny prompt opisujący obrazek, "
+                "który byłby w odpowiedniej formie aby później można było go użyć do wygenerowania grafiki w programie AI."
+                "Do każdego obrazu dodaj podpis w tagu <figcaption>.Twoja odpowiedź powinna zawierać tylko treść między tagami "
+                "<body> i </body>, gotową do zapisania w pliku .html. Nie używaj CSS ani tagów <body> i </body> w odpowiedzi."
             )
         }],
         stream=True,  # Włączenie strumieniowania odpowiedzi
