@@ -1,14 +1,14 @@
 Narzędzie do generowania sekcji body HTML za pomocą OpenAI.
 
 Program jest narzędziem do generowania stron internetowych na podstawie tekstu wejściowego. Wykorzystuje model OpenAI do konwersji tekstu na kod HTML. Główne funkcje programu obejmują:
-1.	Odczyt pliku wejściowego: Program odczytuje treść pliku tekstowego, który 			zawiera surową treść do przekształcenia w stronę HTML.
+1.	Odczyt pliku wejściowego: Program odczytuje treść pliku tekstowego, który zawiera surową treść do przekształcenia w stronę HTML.
 2.	Komunikacja z OpenAI:
 	•Program wysyła treść pliku wraz z wytycznymi do modelu gpt-4o-mini.
-	•Wytyczne definiują, jak należy strukturyzować treść w HTML, w tym miejsca na 			grafiki z odpowiednimi atrybutami alt.
+	•Wytyczne definiują, jak należy strukturyzować treść w HTML, w tym miejsca na grafiki z odpowiednimi atrybutami alt.
 3.	Generacja HTML:
-	•Model zwraca strumieniowo wygenerowany kod HTML, który jest zapisywany w pliku 		wyjściowym o nazwie artykul.html.
+	•Model zwraca strumieniowo wygenerowany kod HTML, który jest zapisywany w pliku wyjściowym o nazwie artykul.html.
 4.	Zapis danych do pliku:
-	•Kod HTML jest zapisany w pliku wyjściowym, gotowym do wklejenia w sekcji body kodu 		HTML.
+	•Kod HTML jest zapisany w pliku wyjściowym, gotowym do wklejenia w sekcji body kodu HTML.
 
 
 Wymagania:
